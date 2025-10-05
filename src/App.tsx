@@ -83,7 +83,7 @@ function App() {
         </ul>
         <h1>How We Do It</h1>
         <h2>
-          We have weekly meetings every Wednesday @ TBD in Johnson 103. At our
+          We have weekly meetings every Wednesday @ 8pm in Johnson 105. At our
           meetings we plan our club activities. As long as it involves lying in
           some way, we'd love to make your lie a reality. Think poster
           campaigns, publications, performances, demonstrations, or anything
@@ -124,7 +124,7 @@ function App() {
         <h1>Get Involved</h1>
         <h2>
           We'd love to have you! We have meetings every week. This week's
-          meeting will be on Wednesday @ TBD in Johnson 103. See you there! Or
+          meeting will be on Wednesday @ 8pm in Johnson 105. See you there! Or
           else!
         </h2>
         <h2>
