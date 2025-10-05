@@ -1,0 +1,140 @@
+import { useEffect, useState } from "react";
+import "./App.css";
+
+const SLIDESHOW_CONTENT = [
+  {
+    title: "Lying Club is a Real Club.",
+    img_slug: "/img/AmericaField.jpeg",
+  },
+  {
+    title: "REPORT: Lying 3x/Day Adds 20+ Years to Your Life",
+    img_slug: "/img/Science.jpeg",
+  },
+  {
+    title: "Lying Club Holds 5th Annual Lie-athon in Ann Arbor",
+    img_slug: "/img/AnnArbor.jpg",
+  },
+  {
+    title: "From Nixon to Clinton to Santos: Famous Lying Club Alumni",
+    img_slug: "/img/Senate.jpg",
+  },
+  {
+    title: "Lying Club Reaches $50M In Pre-Seed Funding",
+    img_slug: "/img/Wallstreet.jpg",
+  },
+  {
+    title: "Lying Club Welcomes 50,000th Member",
+    img_slug: "/img/Convention.jpeg",
+  },
+];
+
+function App() {
+  const [slideshowIndex, setSlideshowIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (slideshowIndex + 1 < SLIDESHOW_CONTENT.length) {
+        setSlideshowIndex((slideshowIndex) => slideshowIndex + 1);
+      } else {
+        setSlideshowIndex(0);
+      }
+    }, 6000);
+    return () => clearInterval(interval);
+  });
+
+  let slideshowItem = SLIDESHOW_CONTENT[slideshowIndex];
+  return (
+    <>
+      <header>
+        <div className="hstack">
+          <span>The</span> LYING CLUB.
+        </div>
+      </header>
+      <div
+        className="background hstack"
+        style={{
+          backgroundImage: `url(${slideshowItem.img_slug})`,
+        }}
+      >
+        <div>
+          <h1>{slideshowItem.title}</h1>
+        </div>
+      </div>
+      <section>
+        <h1>What We Do</h1>
+        <h2>
+          We uplift all types of lying, from satire to fraud, from fibs to
+          perjury, and from half-truths to misinformation. Lying gets a bad
+          name, but it's an essential part of life. We lie all the time:
+        </h2>
+        <ul>
+          <li>when we want to get out of plans</li>
+          <li>when someone shows us their kinda bad short film</li>
+          <li>when we tell people to ‘have a good day’</li>
+          <li>when we want a conversation to end</li>
+          <li>on our jobs applications and government forms</li>
+          <li>when we make small talk</li>
+          <li>to the police, lawyers, and the judge</li>
+          <li>when we pretend to like taylor swift</li>
+          <li>to our cellmates about what we’re in prison for</li>
+          <li>
+            when we wear an elaborate disguise to escape charlie-chaplin style
+          </li>
+        </ul>
+        <h1>How We Do It</h1>
+        <h2>
+          We have weekly meetings every Wednesday @ TBD in Johnson 103. At our
+          meetings we plan our club activities. As long as it involves lying in
+          some way, we'd love to make your lie a reality. Think poster
+          campaigns, publications, performances, demonstrations, or anything
+          else!
+        </h2>
+      </section>
+      <section>
+        <h1>Our Work</h1>
+        <div className="scrollbox">
+          <div className="image-stack" data-image-label="#KeepRotundasRound">
+            <img src="/img/Rotunda.png" /> <img src="/img/RotundaIRL.JPG" />
+          </div>
+          <div
+            className="image-stack"
+            data-image-label="Book Richard Kind for Springfest"
+          >
+            <img src="/img/RichardKind.png" />
+          </div>
+          <div className="image-stack" data-image-label="">
+            <img src="/img/SubauImprezaOwnersClub.png" />
+          </div>
+          <div
+            className="vstack"
+            style={{
+              textWrap: "nowrap",
+              fontSize: "2em",
+              justifyContent: "flex-end",
+            }}
+          >
+            ... and more to come.
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Get Involved</h1>
+        <h2>
+          We'd love to have you! We have meetings every week. This week's
+          meeting will be on Wednesday @ TBD in Johnson 103. See you there! Or
+          else!
+        </h2>
+        <h2>
+          Follow us on Instagram{" "}
+          <a href="https://www.instagram.com/lying.club/">@lying.club</a>
+        </h2>
+      </section>
+      <footer>
+        site developed by{" "}
+        <a href="https://quinnpatwardhan.com">quinn patwardhan</a>.
+      </footer>
+    </>
+  );
+}
+
+export default App;

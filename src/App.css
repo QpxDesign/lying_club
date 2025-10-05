@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Instrument Serif", serif;
+  background-color: #0d132d;
+}
+.hstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.vstack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: #0d132d;
+  color: white;
+  font-family: "Instrument Serif", serif;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  font-size: 3rem;
+  height: 10vh;
+  z-index: 1;
+}
+footer {
+  padding: 2em;
+  font-size: 1.2em;
+}
+header span {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+header div {
+  gap: 0.25em;
+}
+.background {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.33s;
+}
+.background:after {
+  background-color: #0d132d;
+  opacity: 0.6;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.background div {
+  z-index: 1;
+  width: 100%;
+}
+.background div h1 {
+  transition: 0.33s;
+  transform: scale(1.3, 1.8);
+  line-height: 1.1;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  text-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .background div h1 {
+    font-size: 2.75rem;
+  }
+  ul {
+    columns: 1 !important;
+  }
+}
+section {
+  padding: 0.5em 1em;
+}
+section h1,
+section h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+section h2 {
+  font-size: 1.5rem;
+}
+ul {
+  columns: 2;
+  font-size: 1.25rem;
+}
+.scrollbox {
+  display: flex;
+  max-width: 90vw;
+  gap: 1em;
+  height: min(15em, 90%);
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.image-stack {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.image-stack:hover::after {
+  background-color: rgba(13, 19, 45, 0.6);
+  content: attr(data-image-label);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.image-stack img {
+  height: 15em;
+}
