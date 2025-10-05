@@ -4,27 +4,27 @@ import "./App.css";
 const SLIDESHOW_CONTENT = [
   {
     title: "Lying Club is a Real Club.",
-    img_slug: "/img/AmericaField.jpeg",
+    img_slug: "/img/AmericaField.webp",
   },
   {
     title: "REPORT: Lying 3x/Day Adds 20+ Years to Your Life",
-    img_slug: "/img/Science.jpeg",
+    img_slug: "/img/Science.webp",
   },
   {
     title: "Lying Club Holds 5th Annual Lie-athon in Ann Arbor",
-    img_slug: "/img/AnnArbor.jpg",
+    img_slug: "/img/AnnArbor.webp",
   },
   {
     title: "From Nixon to Clinton to Santos: Famous Lying Club Alumni",
-    img_slug: "/img/Senate.jpg",
+    img_slug: "/img/Senate.webp",
   },
   {
     title: "Lying Club Reaches $50M In Pre-Seed Funding",
-    img_slug: "/img/Wallstreet.jpg",
+    img_slug: "/img/Wallstreet.webp",
   },
   {
     title: "Lying Club Welcomes 50,000th Member",
-    img_slug: "/img/Convention.jpeg",
+    img_slug: "/img/Convention.webp",
   },
 ];
 
@@ -94,16 +94,19 @@ function App() {
         <h1>Our Work</h1>
         <div className="scrollbox">
           <div className="image-stack" data-image-label="#KeepRotundasRound">
-            <img src="/img/Rotunda.png" /> <img src="/img/RotundaIRL.JPG" />
+            <img src="/img/Rotunda.webp" /> <img src="/img/RotundaIRL.webp" />
           </div>
           <div
             className="image-stack"
             data-image-label="Book Richard Kind for Springfest"
           >
-            <img src="/img/RichardKind.png" />
+            <img src="/img/RichardKind.webp" />
+          </div>
+          <div className="image-stack" data-image-label="fang.news (website)">
+            <img src="/img/FangNews.webp" />
           </div>
           <div className="image-stack" data-image-label="">
-            <img src="/img/SubauImprezaOwnersClub.png" />
+            <img src="/img/SubauImprezaOwnersClub.webp" />
           </div>
           <div
             className="vstack"

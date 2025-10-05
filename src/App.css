@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Instrument Serif", serif;
   background-color: #0d132d;
+  overflow-x: hidden;
 }
 .hstack {
   display: flex;
@@ -23,7 +24,7 @@ header {
   text-align: center;
   padding: 0.25em 0.5em;
   font-size: 3rem;
-  height: 10vh;
+  height: 8vh;
   z-index: 1;
 }
 footer {
@@ -39,7 +40,7 @@ header div {
 }
 .background {
   width: 100vw;
-  height: 90vh;
+  height: 88vh;
   position: relative;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -83,7 +84,8 @@ header div {
   }
 }
 section {
-  padding: 0.5em 1em;
+  padding: 2em 2em;
+  padding-bottom: 0;
 }
 section h1,
 section h2 {
@@ -96,7 +98,7 @@ section h2 {
 }
 ul {
   columns: 2;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .scrollbox {
   display: flex;
@@ -129,5 +131,5 @@ ul {
   height: 100%;
 }
 .image-stack img {
-  height: 15em;
+  height: 20em;
 }
