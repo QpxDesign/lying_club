@@ -138,7 +138,7 @@ function App() {
           <strong>Next Action:</strong> TBD
         </h3>
         <h3>
-          <strong>Next Meeting:</strong> Tuesday Oct. 22nd @ 8:30pm in Johnson
+          <strong>Next Meeting:</strong> Wednesday Oct. 14th @ 8:30pm in Johnson
           103
         </h3>
         <h2>
