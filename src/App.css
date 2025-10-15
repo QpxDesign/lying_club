@@ -3,7 +3,8 @@ body {
   padding: 0;
   font-family: "Instrument Serif", serif;
   background-color: #0d132d;
-  overflow-x: hidden;
+  overflow-x: hidden
+  color: white;
 }
 .hstack {
   display: flex;
@@ -22,14 +23,18 @@ header {
   color: white;
   font-family: "Instrument Serif", serif;
   text-align: center;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0;
   font-size: 3rem;
+  max-width: 100vw;
   height: 8vh;
   z-index: 1;
 }
 footer {
-  padding: 2em;
-  font-size: 1.2em;
+  max-width: 100vw;
+  padding: 2em 1em;
+  padding-right: 0;
+  font-size: 1.4em;
+  overflow-x: hidden;
 }
 header span {
   font-style: italic;
@@ -84,17 +89,23 @@ header div {
   }
 }
 section {
-  padding: 2em 2em;
+  padding: 2em 0;
   padding-bottom: 0;
+  max-width: 100vw;
 }
 section h1,
-section h2 {
+section h2, section h3 {
   margin: 0;
+  padding: 0.33em 1rem;
   font-size: 3rem;
   font-weight: 900;
 }
-section h2 {
+section h2{
   font-size: 1.5rem;
+}
+ section h3 {
+  font-size: 1.25rem;
+  font-family: "Instrument Sans";
 }
 ul {
   columns: 2;

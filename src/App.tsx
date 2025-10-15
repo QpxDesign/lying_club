@@ -38,7 +38,7 @@ function App() {
       } else {
         setSlideshowIndex(0);
       }
-    }, 6000);
+    }, 8000);
     return () => clearInterval(interval);
   });
 
@@ -102,11 +102,16 @@ function App() {
           >
             <img src="/img/RichardKind.webp" />
           </div>
-          <div className="image-stack" data-image-label="fang.news (website)">
-            <img src="/img/FangNews.webp" />
-          </div>
           <div className="image-stack" data-image-label="">
             <img src="/img/SubauImprezaOwnersClub.webp" />
+          </div>
+          <div
+            className="image-stack"
+            data-image-label="Lying Club Recruitment"
+          >
+            <img src="/img/LyingClub.webp" />
+            <img src="/img/McGruff.webp" />
+            <img src="/img/LyingClubFirstMeetingSocial.webp" />
           </div>
           <div
             className="vstack"
@@ -123,10 +128,19 @@ function App() {
       <section>
         <h1>Get Involved</h1>
         <h2>
-          We'd love to have you! We have meetings every week. This week's
-          meeting will be on Wednesday @ 8pm in Johnson 105. See you there! Or
-          else!
+          We'd love to have you! Please email qpatwardhan [at] oxy.edu for more
+          information and to join the email list. In addition to our club
+          activities (see above), we also hold regular meetings to brainstorm
+          actions, discuss the art of lying, and to workshop our lying
+          abilities.
         </h2>
+        <h3>
+          <strong>Next Action:</strong> TBD
+        </h3>
+        <h3>
+          <strong>Next Meeting:</strong> Tuesday Oct. 22nd @ 8:30pm in Johnson
+          103
+        </h3>
         <h2>
           Follow us on Instagram{" "}
           <a href="https://www.instagram.com/lying.club/">@lying.club</a>
@@ -139,5 +153,4 @@ function App() {
     </>
   );
 }
-
 export default App;
