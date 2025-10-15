@@ -83,11 +83,10 @@ function App() {
         </ul>
         <h1>How We Do It</h1>
         <h2>
-          We have weekly meetings every Wednesday @ 8pm in Johnson 105. At our
-          meetings we plan our club activities. As long as it involves lying in
-          some way, we'd love to make your lie a reality. Think poster
-          campaigns, publications, performances, demonstrations, or anything
-          else!
+          We have weekly meetings (see below), where we plan our club
+          activities. As long as it involves lying in some way, we'd love to
+          make your lie a reality. Think poster campaigns, publications,
+          performances, demonstrations, or anything else!
         </h2>
       </section>
       <section>
