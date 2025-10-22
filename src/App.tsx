@@ -44,7 +44,7 @@ function App() {
 
   let slideshowItem = SLIDESHOW_CONTENT[slideshowIndex];
   return (
-    <>
+    <div>
       <header>
         <div className="hstack">
           <span>The</span> LYING CLUB.
@@ -134,11 +134,11 @@ function App() {
           abilities.
         </h2>
         <h3>
-          <strong>Next Action:</strong> TBD
+          <strong>Next Action:</strong> Rotunda Postering & Secret Project
+          Brainstorming
         </h3>
         <h3>
-          <strong>Next Meeting:</strong> Wednesday Oct. 15th @ 8:30pm in Johnson
-          103
+          <strong>Next Meeting:</strong> Thursday Oct. 22nd @ 6pm in Fowler 301
         </h3>
         <h2>
           Follow us on Instagram{" "}
@@ -149,7 +149,7 @@ function App() {
         site developed by{" "}
         <a href="https://quinnpatwardhan.com">quinn patwardhan</a>.
       </footer>
-    </>
+    </div>
   );
 }
 export default App;
