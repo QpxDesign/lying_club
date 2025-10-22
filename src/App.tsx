@@ -138,7 +138,7 @@ function App() {
           Brainstorming
         </h3>
         <h3>
-          <strong>Next Meeting:</strong> Thursday Oct. 22nd @ 6pm in Fowler 301
+          <strong>Next Meeting:</strong> Thursday Oct. 23rd @ 6pm in Fowler 301
         </h3>
         <h2>
           Follow us on Instagram{" "}
