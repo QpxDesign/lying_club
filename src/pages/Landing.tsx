@@ -132,11 +132,10 @@ export default function Landing() {
           abilities.
         </h2>
         <h3>
-          <strong>Next Action:</strong> Rotunda Postering & Secret Project
-          Brainstorming
+          <strong>Next Action:</strong> AI Pledge
         </h3>
         <h3>
-          <strong>Next Meeting:</strong> Thursday Oct. 23rd @ 6pm in Fowler 301
+          <strong>Next Meeting:</strong> TBD
         </h3>
         <h2>
           Follow us on Instagram{" "}
