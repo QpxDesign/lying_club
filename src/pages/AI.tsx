@@ -1,6 +1,15 @@
+import { IoIosArrowRoundDown } from "react-icons/io";
+import { FaFileSignature } from "react-icons/fa";
+
 export default function AI() {
   return (
     <>
+      <a className="logo-wrapper" href="/">
+        <img src={"/img/Logo.png"} className="logo" />
+        <h1>
+          An Official Bulletin of <br></br> Lying Club
+        </h1>
+      </a>
       <div
         className="page-wrapper"
         style={{
@@ -10,32 +19,99 @@ export default function AI() {
           width: "100vw",
         }}
       >
-        <div style={{ paddingTop: "15em" }}>
-          <h1>Sign the Lying Club AI Pledge</h1>
-          <h2>
-            (it's a pledge <span>not</span> to use AI, not a pledge for AI)
-          </h2>
-          <div className="spacearound">
-            <a href="https://forms.gle/XUqwyTFEMXcbqYSc8" target="_blank">
-              <button>Pledge</button>
-            </a>
-            <a
-              href="https://docs.google.com/spreadsheets/d/1ZwPof3Y86M5GDZNIIhE10I4vJNgS-fuQZLRlyh3bZNo/edit?usp=sharing"
-              target="_blank"
-            >
-              <button>See Pledgers</button>
-            </a>
-          </div>
-          <div>
-            <h3
-              style={{
-                marginTop: "5em",
-                fontWeight: 800,
-                fontFamily: "Instrument Sans",
+        <section className="ai-header vstack hstack">
+          <div
+            style={{ width: "95%", margin: "0 auto", zIndex: 3 }}
+            className="vstack"
+          >
+            <h1 style={{ fontSize: "6.5rem" }}>"AI" is a lie.</h1>
+            <h2 style={{ fontSize: "2rem" }}>
+              Trust Us. We have over 37 weeks of experience in recognizing,
+              crafting, and disseminating lies.
+            </h2>
+            <button
+              onClick={() => {
+                window.scrollTo({
+                  left: 0,
+                  top: window.innerHeight,
+                  behavior: "smooth",
+                });
               }}
+              style={{
+                marginTop: "1.5em",
+                gap: "0.125em",
+                padding: "0.25em 1.5em",
+              }}
+              className="hstack"
             >
-              You Don't Need AI.
+              Read More &amp; <br></br> Sign the Pledge{" "}
+              <IoIosArrowRoundDown
+                style={{ fontSize: "2em", padding: 0 }}
+              />{" "}
+            </button>
+          </div>
+        </section>
+        <div>
+          <div>
+            <h3>"AI" isn't AI.</h3>
+            <h4>
+              What is AI? Nobody seems to know. Perhaps because the term "AI"
+              has no explicit definition or meaning, outside of the buzzwords
+              used by those with a direct financial stake in its success.{" "}
+              "AI"-peddlers often point to the ability of language models to
+              solve high-level exams and coding tasks at or above the level of a
+              human. They fail to mention how the models have the entirety of
+              the internet at their disposal. Hell, who couldn't get a 1600 on
+              the SAT or build their own website if they had access to hundreds
+              of SAT answer-keys and thousands of repositories of already-coded
+              websites? At most, "AI" is just a way to obfuscate and legitimise
+              plagiarism.
+            </h4>
+            <h3>"AI" Sucks.</h3>
+            <h4>
+              Here's a non-exhaustive list of reasons why. If "AI" was actually
+              a human-like being, it'd be facing several millenniums in
+              prison.{" "}
+            </h4>
+            <ul>
+              <li>
+                X Users use it to generate CSAM based on images of real
+                children, and explicit/revealing images of unconsenting adults
+              </li>
+              <li>The U.S. Government uses it to commit acts of war.</li>
+              <li>
+                Stalkers use it to rationalize their behavior and treatment of
+                women.
+              </li>
+              <li>
+                DOGE (remember them?) used it to cut access to programs, to
+                predictively (pun-indented) terrible results
+              </li>
+              <li>
+                The U.S. President uses it to generate misinformation and
+                propaganda (and really shitty memes)
+              </li>
+              <li>It powers scams and hacks</li>
+              <li>It trains on anything you input into it </li>
+              <li>
+                It's trained on pirated media, and it's training exposed
+                hundreds of low-paid Kenyan Workers to incredibly traumatizing
+                and toxic content
+              </li>
+              <li>
+                "AI" Companies bulldozed forests and green spaces to build loud,
+                polluting data enters against the wishes of residents by
+                subverting democracy{" "}
+              </li>
+              <li>and the list goes on.</li>
+            </ul>
+            <h3
+              style={{ fontStyle: "italic", marginTop: 0, fontSize: "1.5em" }}
+            >
+              All this for a supped-up version of Siri!?!?
             </h3>
+
+            <h3>You Don't Need It.</h3>
             <p>
               You don't need a robot to confidently lie to your face. We've been
               perfecting that art for months, and we barely consume any water
@@ -96,6 +172,26 @@ export default function AI() {
             </ul>
           </div>
         </div>
+        <a href="https://forms.gle/XUqwyTFEMXcbqYSc8" target="_blank">
+          <button
+            onClick={() => {
+              window.scrollTo({
+                left: 0,
+                top: window.innerHeight,
+                behavior: "smooth",
+              });
+            }}
+            style={{
+              marginTop: "1.5em",
+              gap: "0.5em",
+              padding: "0.25em 1.5em",
+            }}
+            className="hstack"
+          >
+            Sign the Pledge
+            <FaFileSignature style={{ fontSize: "1em", padding: 0 }} />{" "}
+          </button>
+        </a>
       </div>
     </>
   );

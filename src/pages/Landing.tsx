@@ -58,14 +58,14 @@ export default function Landing() {
           <h1>{slideshowItem.title}</h1>
         </div>
       </div>
-      <section>
+      <section className="text-border">
         <h1>What We Do</h1>
         <h2>
           We uplift all types of lying, from satire to fraud, from fibs to
           perjury, and from half-truths to misinformation. Lying gets a bad
           name, but it's an essential part of life. We lie all the time:
         </h2>
-        <ul>
+        <ul style={{ marginTop: 0 }}>
           <li>when we want to get out of plans</li>
           <li>when someone shows us their kinda bad short film</li>
           <li>when we tell people to ‘have a good day’</li>
@@ -90,6 +90,27 @@ export default function Landing() {
       <section>
         <h1>Our Work</h1>
         <div className="scrollbox">
+          <a href="/ai">
+            <div className="image-stack" data-image-label="AI Pledge">
+              <img src="/img/Sniffing.webp" />
+              <img src="/img/McGruffAI.webp" />
+              <img src="/img/WhatYouCallIt.webp" />
+            </div>
+          </a>
+          <div
+            className="image-stack"
+            data-image-label="Honoring Oxy Alum Ben Affleck"
+          >
+            <img src="/img/BenAffleck.webp" />
+          </div>
+          <div className="image-stack" data-image-label="Designated Driver">
+            <img src="/img/DesignatedDriver.png" />
+          </div>
+          <div className="image-stack" data-image-label="Unlicensed Therapy">
+            <img src="/img/UnlicensedTherapy-1.png" />
+            <img src="/img/UnlicensedTherapy-2.png" />
+            <img src="/img/UnlicensedTherapy-3.jpg" />
+          </div>
           <div className="image-stack" data-image-label="#KeepRotundasRound">
             <img src="/img/Rotunda.webp" /> <img src="/img/RotundaIRL.webp" />
           </div>
@@ -109,6 +130,7 @@ export default function Landing() {
             <img src="/img/LyingClub.webp" />
             <img src="/img/McGruff.webp" />
             <img src="/img/LyingClubFirstMeetingSocial.webp" />
+            <img src="/img/WingDings.png" />
           </div>
           <div
             className="vstack"
