@@ -116,12 +116,12 @@ ul {
   display: flex;
   max-width: 90vw;
   gap: 1em;
-  height: max(30em, 90vh);
+  height: min(35em, 90vh);
   overflow-x: scroll;
   overflow-y: hidden;
 }
 .image-stack img {
-  height: 100%;
+  max-width: 90vw;
 }
 .image-stack {
   display: flex;
@@ -256,4 +256,10 @@ button {
 .image-stack:hover {
   cursor: pointer;
   color: white;
+}
+.footnote {
+  font-size: 0.66em;
+  position: relative;
+  top: -0.5em;
+  font-size: 80%;
 }

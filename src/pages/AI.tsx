@@ -1,5 +1,6 @@
 import { IoIosArrowRoundDown } from "react-icons/io";
 import { FaFileSignature } from "react-icons/fa";
+import Footnote from "../components/Footnote";
 
 export default function AI() {
   return (
@@ -21,13 +22,13 @@ export default function AI() {
       >
         <section className="ai-header vstack hstack">
           <div
-            style={{ width: "95%", margin: "0 auto", zIndex: 3 }}
+            style={{ width: "90%", margin: "0 auto", zIndex: 3 }}
             className="vstack"
           >
             <h1 style={{ fontSize: "6.5rem" }}>"AI" is a lie.</h1>
             <h2 style={{ fontSize: "2rem" }}>
-              Trust Us. We have over 37 weeks of experience in recognizing,
-              crafting, and disseminating lies.
+              Trust Us. We have over 37 weeks of experience in disseminating
+              lies, misinformation, and half-truths.
             </h2>
             <button
               onClick={() => {
@@ -55,7 +56,7 @@ export default function AI() {
           <div>
             <h3>"AI" isn't AI.</h3>
             <h4>
-              What is AI? Nobody seems to know. Perhaps because the term "AI"
+              What is "AI"? Nobody seems to know. Perhaps because the term "AI"
               has no explicit definition or meaning, outside of the buzzwords
               used by those with a direct financial stake in its success.{" "}
               "AI"-peddlers often point to the ability of language models to
@@ -73,51 +74,153 @@ export default function AI() {
               a human-like being, it'd be facing several millenniums in
               prison.{" "}
             </h4>
-            <ul>
+            <ul style={{ width: "75%" }}>
               <li>
-                X Users use it to generate CSAM based on images of real
-                children, and explicit/revealing images of unconsenting adults
+                X Users use it to generate CSAM based on images of real children{" "}
+                <Footnote
+                  link={"https://www.bbc.com/news/articles/cvg1mzlryxeo"}
+                  number={1}
+                />
+                <Footnote
+                  link={
+                    "https://en.wikipedia.org/wiki/Grok_sexual_deepfake_scandal"
+                  }
+                  number={2}
+                />
+                , and explicit/revealing images of unconsenting adults{" "}
+                <Footnote
+                  link={
+                    "https://oag.ca.gov/news/press-releases/attorney-general-bonta-launches-investigation-xai-grok-over-undressed-sexual-ai"
+                  }
+                  number={3}
+                />{" "}
               </li>
-              <li>The U.S. Government uses it to commit acts of war.</li>
               <li>
-                Stalkers use it to rationalize their behavior and treatment of
-                women.
+                The U.S. Government uses it to commit acts of war{" "}
+                <Footnote
+                  link={
+                    "https://www.economist.com/culture/2026/05/14/the-ai-that-transformed-american-warfare"
+                  }
+                  number={4}
+                />
               </li>
               <li>
                 DOGE (remember them?) used it to cut access to programs, to
                 predictively (pun-indented) terrible results
+                <Footnote
+                  link={
+                    "https://www.nytimes.com/2026/03/07/arts/humanities-endowment-doge-trump.html"
+                  }
+                  number={5}
+                />
               </li>
               <li>
                 The U.S. President uses it to generate misinformation and
                 propaganda (and really shitty memes)
+                <Footnote
+                  link={
+                    "https://www.snopes.com/collections/trump-white-house-ai-posts/"
+                  }
+                  number={6}
+                />
               </li>
-              <li>It powers scams and hacks</li>
-              <li>It trains on anything you input into it </li>
+              <li>
+                It powers scams and hacks
+                <Footnote
+                  link={
+                    "https://dfpi.ca.gov/news/insights/protect-yourself-from-ai-scams/"
+                  }
+                  number={7}
+                />
+              </li>
+              <li>
+                It trains on anything you input into it
+                <Footnote
+                  link={
+                    "https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/#:~:text=ChatGPT%2C%20for%20instance%2C%20improves%20by%20further%20training%20on%20the%20conversations%20people%20have%20with%20it"
+                  }
+                  number={8}
+                />
+              </li>
               <li>
                 It's trained on pirated media, and it's training exposed
                 hundreds of low-paid Kenyan Workers to incredibly traumatizing
                 and toxic content
+                <Footnote
+                  link={
+                    "https://time.com/6247678/openai-chatgpt-kenya-workers/"
+                  }
+                  number={9}
+                />
               </li>
               <li>
                 "AI" Companies bulldozed forests and green spaces to build loud,
                 polluting data enters against the wishes of residents by
-                subverting democracy{" "}
+                subverting democracy
+                <Footnote
+                  link={
+                    "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
+                  }
+                  number={10}
+                />{" "}
+                <Footnote
+                  link={
+                    "https://www.theguardian.com/us-news/2026/may/13/utah-approves-datacenter-backlash"
+                  }
+                  number={11}
+                />
               </li>
-              <li>and the list goes on.</li>
+              <li>
+                It lies to you (that's our job!)
+                <Footnote
+                  link={
+                    "https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)"
+                  }
+                  number={12}
+                />
+              </li>
+              <li>
+                and the list goes on.
+                <Footnote
+                  link={
+                    "https://www.eesi.org/articles/view/data-centers-and-water-consumption"
+                  }
+                  number={13}
+                />
+                <Footnote
+                  link={
+                    "https://www.psychologytoday.com/us/blog/urban-survival/202507/the-emerging-problem-of-ai-psychosis"
+                  }
+                  number={14}
+                />
+                <Footnote
+                  link={
+                    "https://www.reuters.com/world/china/ai-frenzy-is-driving-new-global-supply-chain-crisis-2025-12-03/"
+                  }
+                  number={15}
+                />
+              </li>
             </ul>
             <h3
-              style={{ fontStyle: "italic", marginTop: 0, fontSize: "1.5em" }}
+              className="text-center"
+              style={{
+                fontStyle: "italic",
+                marginTop: 0,
+                fontSize: "1.5em",
+                width: "80%",
+                margin: "0 auto",
+              }}
             >
-              All this for a supped-up version of Siri!?!?
+              All this just so you can cheat on your homework!?
             </h3>
 
             <h3>You Don't Need It.</h3>
             <p>
               You don't need a robot to confidently lie to your face. We've been
               perfecting that art for months, and we barely consume any water
-              (at least according to our doctors). AI is a dangerous blight that
-              came from the epicenter of all evil on earth: Silicon Valley. It's
-              the ninth-worst thing big tech has ever done. It kills your
+              (at least according to our doctors). "AI" is a dangerous blight
+              that came from the epicenter of all evil on earth: Silicon Valley.
+              It's the ninth-worst thing big tech has ever done. It kills your
               creativity, rots your brain, and destroys the environment. It also
               makes you absolutely insufferable. Still not sold? Just look at
               our very real PSAs below:
@@ -152,8 +255,8 @@ export default function AI() {
                 one you'd get out of ChatGPT.{" "}
               </li>
               <li>
-                Come to our weekly AI-User Anonymous Meetings (TBD) to talk out
-                your AI withdrawals amongst the community
+                Come to our weekly "AI"-User Anonymous Meetings (TBD) to talk
+                out your AI withdrawals amongst the community
               </li>
               <li>
                 Use <a href="https://udm14.com">udm14.com</a> (or add '-ai' to
