@@ -211,7 +211,8 @@ export default function AI() {
                 margin: "0 auto",
               }}
             >
-              All this just so you can cheat on your homework!?
+              All this just so you can cheat on your homework!? There's better
+              and more ethical ways for that!
             </h3>
 
             <h3>You Don't Need It.</h3>

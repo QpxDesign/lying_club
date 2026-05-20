@@ -122,8 +122,10 @@ ul {
 }
 .image-stack img {
   max-width: 90vw;
+  height: 100%;
 }
 .image-stack {
+  width: fit-content;
   display: flex;
   flex-direction: row;
   position: relative;
