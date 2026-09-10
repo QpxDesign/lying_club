@@ -157,7 +157,7 @@ export default function Landing() {
           <strong>Next Action:</strong> Start-Of-Year Brainstorming
         </h3>
         <h3>
-          <strong>Next Meeting:</strong> Monday (8/14) at 6:00pm in Johnson 104
+          <strong>Next Meeting:</strong> Monday (9/14) at 6:00pm in Johnson 104
         </h3>
         <h2>
           Follow us on Instagram{" "}
